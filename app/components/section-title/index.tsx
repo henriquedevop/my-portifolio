@@ -16,7 +16,7 @@ export const SectionTitle = ({
             'flex flex-col gap-4',
             className
         )}>
-            <span className="font-mono text-sm text-purple-400">{`[~/Gustavo/${subtitle}]`}</span>
+            <span className="font-mono text-sm text-green-400">{`[~/Gustavo/${subtitle}]`}</span>
             <h3 className="text-3xl font-medium">{title}</h3>
         </div>
     )

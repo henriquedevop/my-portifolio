@@ -16,14 +16,13 @@ export const HeroSection = () => {
             <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
 
                 <div className="w-full lg:max-w-[530px]">
-                    <p className="font-mono text-purple-400 text-sm mb-4">{'[~/Gustavo/Geral]'}</p>
-                    <p className="font-mono text-purple-400">Olá, meu nome é</p>
-                    <h2 className="text-4xl font-medium mt-2">Gustavo Henrique</h2>
+                    <p className="font-mono text-green-300 text-sm mb-4">{'[~/Gustavo/Geral]'}</p>
+                    <p className="font-mono text-green-400">Olá, meu nome é</p>
+                    <h2 className="text-5xl font-medium mt-2">Gustavo Henrique</h2>
 
-                    <p className="text-gray-400 my-6 text-sm sm:text-base">
-                    Meu nome é Gustavo Henrique, sou um desenvolvedor FullStack com aproximadamente 6 meses de experiência. Apaixonado por
-                    tecnologia, gosto de transformar ideias em soluções digitais inovadoras. Estou sempre em busca
-                    de desafios que me ajudem a crescer e aprender mais no mundo da programação.
+                    <p className="text-gray-400 my-6 text-base sm:text-lg font-mono">
+                    Estou pronto para <strong>transformar suas ideias em soluções digitais eficientes,</strong> com interfaces acessíveis,
+                     modernas e focadas na melhor usabilidade para os usuários.
                     </p>
 
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
@@ -33,7 +32,7 @@ export const HeroSection = () => {
                     </div>
 
                     <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-                        <Button className="shadow-button w-max">
+                        <Button className="shadow-button w-max duration-300">
                             Entre em contato
                             <HiArrowNarrowRight size={18}/>
                         </Button>
@@ -54,12 +53,13 @@ export const HeroSection = () => {
 
                 </div>
                 
-                <Image
+                <img
                 width={302}
                 height={304}
                 src={"/images/profilepic2.jpeg"}
-                alt="Foto de perfil do Gustavo"
-                className="w-[300px] h-[300px] lg:w-[370px] lg:h-[484px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
+                alt="Foto de perfil de Gustavo"
+                className="w-[300px] h-[300px] lg:w-[370px] lg:h-[384px] grayscale hover:grayscale-0 hover:scale-105 transition-all
+                duration-500 mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
                 />
 
             </div>
