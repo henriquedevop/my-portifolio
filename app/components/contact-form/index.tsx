@@ -26,7 +26,7 @@ export const ContactForm = () => {
     }
 
     return (
-        <section className="py-16 px-6 md:py-32 flex items-center justify-center bg-black">
+        <section id="contact" className="py-16 px-6 md:py-32 flex items-center justify-center bg-black">
             <div className="w-full max-w-[420px] mx-auto">
                 <SectionTitle subtitle="Contato" title="Entre em contato comigo! Vamos trabalho juntos"
                 className="items-center text-center"
