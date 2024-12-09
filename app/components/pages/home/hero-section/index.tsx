@@ -53,11 +53,12 @@ export const HeroSection = () => {
 
                 </div>
                 
-                <img
+                <Image
                 width={302}
                 height={304}
                 src={"/images/profilepic2.jpeg"}
                 alt="Foto de perfil de Gustavo"
+                unoptimized
                 className="w-[300px] h-[300px] lg:w-[370px] lg:h-[384px] grayscale hover:grayscale-0 hover:scale-105 transition-all
                 duration-500 mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
                 />
