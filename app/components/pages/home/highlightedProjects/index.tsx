@@ -11,9 +11,15 @@ export const HighlightedProjects = () => {
             <HorizontalDivider className="mb-16"/>
             
             <div>
-                <ProjectCard/> 
-                <HorizontalDivider className="my-16"/>
-                <ProjectCard/> 
+                <ProjectCard
+                title="Projeto Link Òrbita"
+                description="Este projeto foi criado para resolver uma necessidade real: centralizar os links em um só
+                lugar. O usuário pode adicionar seus links em uma página própria e compartilhar o link gerado por nós,
+                além de personalizar as cores e os cards de links."
+                imageUrl="/images/linkorbita.png"
+                projectLink="/projects/linkorbita"
+                techs={['React', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'FireBase']}
+                /> 
                 <HorizontalDivider className="my-16"/>
                 
                 <p className="flex items-center gap-1.5">
