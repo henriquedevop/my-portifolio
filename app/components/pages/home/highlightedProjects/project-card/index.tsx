@@ -8,11 +8,10 @@ interface ProjectCardProps {
     title: string
     description: string
     imageUrl: string
-    projectLink: string
     techs: string[]
 }
 
-export const ProjectCard = ({ title, description, imageUrl, projectLink, techs }: ProjectCardProps) => {
+export const ProjectCard = ({ title, description, imageUrl, techs }: ProjectCardProps) => {
     return (
         <div className="flex gap-6 sm:gap-12 flex-col sm:flex-row">
             <div className="w-full h-full">
@@ -42,8 +41,8 @@ export const ProjectCard = ({ title, description, imageUrl, projectLink, techs }
                     ))}
                 </div>
 
-                <LinkComponent href={projectLink} >
-                    Ver projeto
+                <LinkComponent href="/projects" >
+                    Veja mais projetos
                     <HiArrowNarrowRight />
                 </LinkComponent>
 

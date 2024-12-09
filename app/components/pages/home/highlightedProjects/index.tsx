@@ -17,20 +17,20 @@ export const HighlightedProjects = () => {
                 lugar. O usuário pode adicionar seus links em uma página própria e compartilhar o link gerado por nós,
                 além de personalizar as cores e os cards de links."
                 imageUrl="/images/linkorbita.png"
-                projectLink="/projects/linkorbita"
                 techs={['React', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'FireBase']}
                 /> 
                 <HorizontalDivider className="my-16"/>
+
+                <ProjectCard
+                title="Projeto Stella Express"
+                description="Este projeto foi desenvolvido do zero, tanto na parte de desenvolvimento quanto no design,
+                buscando criar uma interface moderna e atrativa para os clientes. A funcionalidade principal é mostrar
+                a localização e os produtos disponíveis no estabelecimento."
+                imageUrl="/images/stellaexpress.png"
+                techs={['React', 'JavaScript', 'TypeScript', 'Tailwind CSS']}
+                /> 
+                <HorizontalDivider className="my-16"/>
                 
-                <p className="flex items-center gap-1.5">
-                    <span className="text-gray-400">
-                        Se interessou?
-                    </span>
-                    <LinkComponent href="/projects" className="inline-flex">
-                        Ver todos
-                        <HiArrowNarrowRight/>
-                    </LinkComponent>
-                </p>
             </div>
         </section>
     )

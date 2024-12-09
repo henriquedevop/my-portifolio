@@ -5,6 +5,7 @@ import { TechBadge } from "../../../tech-badges"
 import { Button } from "@/app/components/button"
 import { HiArrowNarrowRight } from "react-icons/hi"
 import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb"
+import { motion } from "framer-motion"
 
 const MOCK_CONTACTS = [
     {url: "https://github.com/henriquedevop", icon: <TbBrandGithub/>},
@@ -23,7 +24,12 @@ export const HeroSection = () => {
 
             <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
 
-                <div className="w-full lg:max-w-[530px]">
+                <motion.div 
+                initial={{opacity: 0, x: -100}}
+                whileInView={{opacity: 1, x: 0}}
+                exit={{opacity: 0, x: -100}}
+                transition={{duration: .5}}
+                className="w-full lg:max-w-[530px]">
                     <p className="font-mono text-green-300 text-sm mb-4">{'[~/Gustavo/Geral]'}</p>
                     <p className="font-mono text-green-400">Olá, meu nome é</p>
                     <h2 className="text-5xl font-medium mt-2">Gustavo Henrique</h2>
@@ -61,7 +67,7 @@ export const HeroSection = () => {
                         </div>
                     </div>
 
-                </div>
+                </motion.div>
                 
                 <Image
                 width={302}
